@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boilerplate React</title>
 
-    <link rel="stylesheet" href="https://use.typekit.net/pvi3udl.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -18,6 +19,33 @@
     <div id="app"></div>
     <!-- this is where our React app will go -->
     <script src="./js/bundle.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        const menuIconEl = $('.menu-icon');
+        const sidenavEl = $('.sidebar');
+        const sidenavCloseEl = $('.sidebar__close-icon');
+
+        // Add and remove provided class names
+        function toggleClassName(el, className) {
+            if (el.hasClass(className)) {
+                el.removeClass(className);
+            } else {
+                el.addClass(className);
+            }
+        }
+
+        // Open the side nav on click
+        menuIconEl.on('click', function () {
+            toggleClassName(sidenavEl, 'active');
+        });
+
+        // Close the side nav on click
+        sidenavCloseEl.on('click', function () {
+            toggleClassName(sidenavEl, 'active');
+        });
+    </script>
 </body>
 
 </html>

@@ -1,8 +1,12 @@
 // Base Styles
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 // NOTE
-// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// html is set to 62.5% so that all the REM measurements throughout Layout/elemtents
 // are based on 10px sizing. So basically 1.5rem = 15px :)
+
+*{
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
@@ -15,15 +19,4 @@ body {
   font-weight: 400;
 }
 
-// Misc
-//––––––––––––––––––––––––––––––––––––––––––––––––––
 
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-}
-
-div, header, footer {
-  box-sizing: border-box;
-}
