@@ -1,0 +1,28 @@
+// Fonts
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@font-face {
+
+    font-family: 'brandon-grotesque-regular';
+    src: url("./fonts/brandon-grotesque/regular/BrandonGrotesque-Regular.ttf") format("truetype");
+    
+ }
+
+ @font-face {
+
+    font-family: 'brandon-grotesque-medium';
+    src: url("./fonts/brandon-grotesque/medium/BrandonGrotesque-Medium.ttf") format("truetype");
+
+ }
+
+ @font-face {
+
+    font-family: 'brandon-grotesque-bold';
+    src: url("./fonts/brandon-grotesque/bold/BrandonGrotesque-Bold.ttf") format("truetype");
+
+ }
+
+// Primary Fonts
+$font-main: 'brandon-grotesque-regular', sans-serif;
+$font-main-medium: 'brandon-grotesque-medium', sans-serif;
+$font-main-bold: 'brandon-grotesque-bold', sans-serif;

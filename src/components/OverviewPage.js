@@ -4,15 +4,14 @@ const OverviewPage = () => (
 
     <div className="grid-container">
 
+        <div className="menu-icon">
+            <i className="fas fa-bars" />
+        </div>
 
         <header className="header">
             <div className="header__search">Search...</div>
             <div className="header__avatar">User</div>
         </header>
-
-        <div className="menu-icon">
-            <i className="fas fa-bars" />
-        </div>
 
         <aside className="sidebar">
 
@@ -20,58 +19,103 @@ const OverviewPage = () => (
                 <i className="fas fa-times" />
             </div>
 
+            <div className="sidebar__brand">
+                <h3 className="sidebar__brand-copy">
+                    <i className="sidebar__brand-icon far fa-chart-bar" />
+                    Body Tracker
+                </h3>
+            </div>
+
             <ul className="sidebar__list">
-                <li className="sidebar__list-item">Item One</li>
-                <li className="sidebar__list-item">Item Two</li>
-                <li className="sidebar__list-item">Item Three</li>
-                <li className="sidebar__list-item">Item Four</li>
-                <li className="sidebar__list-item">Item Five</li>
+                <li className="sidebar__list-title">Dashboard</li>
+                <li className="sidebar__list-item sidebar__list-active">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Overview
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Measurements
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Achievements
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                    Meal & Routine
+                </li>
+            </ul>
+
+            <ul className="sidebar__list">
+                <li className="sidebar__list-title">Account</li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Profile
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Reset Week
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Support
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     About
+                </li>
+                <li className="sidebar__list-item">
+                    <i className="sidebar__list-icon far fa-chart-bar" />
+                     Log Out
+                </li>
             </ul>
         </aside>
 
         <main className="main">
-            <div className="main-header">
-                <div className="main-header__heading">Hello User</div>
-                <div className="main-header__updates">Recent Items</div>
+
+            <div className="main-content">
+
+                <div className="main-header">
+                    <div className="main-header__heading">Hello User</div>
+                    <div className="main-header__updates">Recent Items</div>
+                </div>
+
+                <div className="main-overview">
+                    <div className="main-overview-overviewcard">
+                        <div className="overviewcard__icon">Overview</div>
+                        <div className="overviewcard__info">Card</div>
+                    </div>
+                    <div className="main-overview-overviewcard">
+                        <div className="overviewcard__icon">Overview</div>
+                        <div className="overviewcard__info">Card</div>
+                    </div>
+                    <div className="main-overview-overviewcard">
+                        <div className="overviewcard__icon">Overview</div>
+                        <div className="overviewcard__info">Card</div>
+                    </div>
+                    <div className="main-overview-overviewcard">
+                        <div className="overviewcard__icon">Overview</div>
+                        <div className="overviewcard__info">Card</div>
+                    </div>
+                </div>
+
+                <div className="main-cards">
+                    <div className="main-cards-card">Card</div>
+                    <div className="main-cards-card">Card</div>
+                    <div className="main-cards-card">Card</div>
+                </div>
             </div>
 
-            <div className="main-overview">
-                <div className="overviewcard">
-                    <div className="overviewcard__icon">Overview</div>
-                    <div className="overviewcard__info">Card</div>
+            <footer className="main-footer">
+                <div className="footer__menu">
+                Home
+                About
+                Log Out
                 </div>
-                <div className="overviewcard">
-                    <div className="overviewcard__icon">Overview</div>
-                    <div className="overviewcard__info">Card</div>
-                </div>
-                <div className="overviewcard">
-                    <div className="overviewcard__icon">Overview</div>
-                    <div className="overviewcard__info">Card</div>
-                </div>
-                <div className="overviewcard">
-                    <div className="overviewcard__icon">Overview</div>
-                    <div className="overviewcard__info">Card</div>
-                </div>
-            </div>
-
-            <div className="main-cards">
-                <div className="card">Card</div>
-                <div className="card">Card</div>
-                <div className="card">Card</div>
-            </div>
+                <div className="footer__copyright">Copyright © 2019 LisCode</div>
+            </footer>
 
         </main>
-
-        <footer className="footer">
-            <div className="footer__menu">
-                Link
-                Link
-                Link
-                Link
-                Link
-            </div>
-            <div className="footer__copyright">Copyright © 2019 Lis</div>
-        </footer>
 
     </div>
 
